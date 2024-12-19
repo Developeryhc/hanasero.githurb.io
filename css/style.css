@@ -176,6 +176,7 @@ button:focus {
     color: var(--color-text);
     border-radius: 1rem;
     cursor: default;
+    box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
 }
 
 .major__icon {
@@ -213,4 +214,39 @@ button:focus {
 .job__period {
     color: var(--color-primary);
     font-size: 0.8rem;
+}
+
+/* Skills */
+#skills {
+    background-color: var(--color-primary-variant);
+    color: var(--color-text);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.skills__title {
+    color: var(--color-accent);
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.skills__coding {
+    grid-row: span 2;
+    padding: 1rem;
+    background-color: var(--color-primary);
+}
+
+.skills__tools {
+    padding: 1rem;
+}
+
+.skills__etc {
+    background-color: var(--color-primary);
+    filter: brightness(150%);
+    padding: 1rem;
 }
