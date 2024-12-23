@@ -425,6 +425,7 @@ button:focus {
     border-radius: 100%;
     text-align: center;
     box-shadow: 4.0px 8.0px 8.0px var(--color-accent);
+    transition: all 300ms ease-in;
 }
 
 /* Footer */
