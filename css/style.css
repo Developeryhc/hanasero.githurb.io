@@ -316,6 +316,11 @@ button:focus {
     white-space: nowrap;
 }
 
+.category--selected {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
 .category__count {
     opacity: 0;
     position: absolute;
@@ -330,11 +335,6 @@ button:focus {
     transition: all 250ms ease-in;
 }
 
-.category--selected {
-    background-color: var(--color-accent);
-    color: var(--color-primary);
-}
-
 .category--selected .category__count,
 .category:hover .category__count {
     opacity: 1;
@@ -343,8 +343,15 @@ button:focus {
 .projects {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-rows: 1fr;
     gap: 1rem;
+    transition: all 250ms ease-out;
+}
+
+.projects.anmi-out {
+    opacity: 0;
+    transform: scale(0.96) translateY(-20px) translateX(-20px);
 }
 
 .project {
