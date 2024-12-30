@@ -4,7 +4,7 @@ const navItems = sectionIds.map((id) => document.querySelector(`[href="${id}"]`)
 let activeNavItem = navItems[0];
 
 const options = {
-    rootMargin: "-20% 0px 0px 0px",
+    rootMargin: "-15% 0px 0px 0px",
     threshold: [0.1, 0.98]
 };
 const visibleSections = sectionIds.map(() => false);
